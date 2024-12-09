@@ -271,7 +271,29 @@ $purple: #9356dc;
                     font-size: 23px;
                 }
             }
-        
+            &__like {
+                cursor: pointer;
+
+                & i {
+                    font-size: 25px;
+                }
+                & input[type="checkbox"] {
+                    display: none;
+                }
+                & label:hover .fa-heart {
+                    font-weight: 900;
+                    background: linear-gradient( rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                & input[type="checkbox"]:checked + label .fa-heart {
+                    font-weight: 900;
+                    background: linear-gradient( rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
         }
     }
 }
